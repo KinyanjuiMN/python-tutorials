@@ -1,5 +1,5 @@
-import People.Cperson.person
+import Cperson
 
-per = person()
-per._int("John","23424")
+per = Cperson.person()
+per._init_("John -Correct","23424")
 per._show_person()

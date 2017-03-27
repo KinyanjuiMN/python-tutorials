@@ -1,6 +1,5 @@
-import os
+from ..people.people import Person
 
-from ..people.person import Person
 per = Person()
 per._init_("Name","ID")
 per._show_person()
