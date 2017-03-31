@@ -14,28 +14,25 @@ ID: Id of the persons
 
 class Person(object):
 
-      def _init_(self,name,id):
+      def __init__(self, name, id):
           self._name = name
           self._id = id
 
-      def _set_name(self,name):
+
+      def set_name(self,name):
           self._name = name
 
-      def _set_id(self,id):
+      def set_id(self,id):
           self._id = id
 
-      def _get_name(self):
+      def get_name(self):
           return self._name
 
-      def _get_id(self):
-             return self._id
+      def get_id(self):
+          return self._id
 
-      def _get_person(self):
-            return self._name,self._id
+      def get_person(self):
+          return self._name,self._id
 
-      def _show_person(self):
-            print " Name: %s, ID.:  %s " % (self._name, self._id)
-
-
-
-      
+      def show_person(self):
+          print " Name: %s, ID.:  %s " % (self._name, self._id)
